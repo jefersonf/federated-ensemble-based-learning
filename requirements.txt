@@ -1,0 +1,6 @@
+numpy==1.18.1
+torch
+torchvision
+sklearn 
+pandas
+matplotlib
