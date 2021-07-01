@@ -12,7 +12,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.preprocessing import label_binarize
 
 
-DEFAULT_ML_MODELS = [
+ML_MODELS = [
     ("NaiveBayes", GaussianNB()),
     ("LogisticRegression", linear_model.LogisticRegression(max_iter=1000, C=0.001)),
     ("DecisionTreeClassifier", DecisionTreeClassifier(criterion='entropy', max_depth=10, splitter='best')),
@@ -61,7 +61,7 @@ class EnsembleModel:
         plt.title(f'ROC curve - {title}')
         plt.legend(loc='best')
 
-        plt.savefig(f"{args.log_dir}/ensemble-based-learning/roc_curve_{args.tag}.png", dpi=300)
+        plt.savefig(f"{args.logdir}/fedel/roc_curve.png", dpi=300)
 
     def plot_mult_roc(self, fpr, tpr, roc_auc, n_classes, title, label, args):
         import matplotlib.pyplot as plt
@@ -104,7 +104,7 @@ class EnsembleModel:
         plt.title(f'ROC curve - {title}')
         plt.legend(loc="lower right")
 
-        plt.savefig(f"{args.log_dir}/ensemble-based-learning/roc_curve_{args.tag}.png", dpi=300)
+        plt.savefig(f"{args.logdir}/fedel/roc_curve.png", dpi=300)
 
         return roc_auc
 
@@ -124,7 +124,7 @@ class EnsembleModel:
             for i in range(n_classes):
                 fpr[i], tpr[i], _ = metrics.roc_curve(target_bin[:, i], pred_proba[:, i])
                 last_round_roc = pd.DataFrame({"fpr": fpr[i], "tpr": tpr[i]})
-                last_round_roc.to_csv(f"{args.log_dir}/ensemble-based-learning/last_fpr{i}_tpr{i}_{args.tag}.csv", index=False)
+                last_round_roc.to_csv(f"{args.logdir}/fedel/last_fpr{i}_tpr{i}.csv", index=False)
                 roc_auc[i] = metrics.auc(fpr[i], tpr[i])
                 
             # Compute micro-average ROC curve and ROC area
@@ -138,7 +138,7 @@ class EnsembleModel:
             fpr, tpr, _ = metrics.roc_curve(target, pred_proba[:,1])
             if round_id + 1 == args.rounds:
                 last_round_roc = pd.DataFrame({"fpr": fpr, "tpr": tpr})
-                last_round_roc.to_csv(f"{args.log_dir}/ensemble-based-learning/last_fpr_tpr_{args.tag}.csv", index=False)
+                last_round_roc.to_csv(f"{args.logdir}/fedel/last_fpr_tpr.csv", index=False)
 
             auc = metrics.roc_auc_score(target, pred_proba[:,1])
             self.plot_roc(fpr, tpr, title=f"{args.n_clients} clients (alpha={args.dirichlet_alpha})", label=f"{label}, AUC={auc:.2f}", args=args)

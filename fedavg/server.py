@@ -68,7 +68,7 @@ class Server:
         plt.title(f'ROC curve - {title}')
         plt.legend(loc='best')
 
-        plt.savefig(f"{args.log_dir}/averaging-weights-learning/roc_curve_{args.tag}.png", dpi=300)
+        plt.savefig(f"{args.logdir}/fedavg/roc_curve.png", dpi=300)
 
     def plot_mult_roc(self, fpr, tpr, roc_auc, n_classes, title, label, args):
         import matplotlib.pyplot as plt
@@ -111,7 +111,7 @@ class Server:
         plt.title(f'ROC curve - {title}')
         plt.legend(loc="lower right")
 
-        plt.savefig(f"{args.log_dir}/averaging-weights-learning/roc_curve_{args.tag}.png", dpi=300)
+        plt.savefig(f"{args.logdir}/fedavg/roc_curve.png", dpi=300)
 
         return roc_auc
 
@@ -133,7 +133,7 @@ class Server:
             for i in range(n_classes):
                 fpr[i], tpr[i], _ = metrics.roc_curve(target_bin[:, i], pred_proba[:, i])
                 last_round_roc = pd.DataFrame({"fpr": fpr[i], "tpr": tpr[i]})
-                last_round_roc.to_csv(f"{args.log_dir}/averaging-weights-learning/last_fpr{i}_tpr{i}_{args.tag}.csv", index=False)
+                last_round_roc.to_csv(f"{args.logdir}/fedavg/last_fpr{i}_tpr{i}.csv", index=False)
                 roc_auc[i] = metrics.auc(fpr[i], tpr[i])
                 
             # Compute micro-average ROC curve and ROC area
@@ -147,7 +147,7 @@ class Server:
             fpr, tpr, _ = metrics.roc_curve(target, pred_proba[:,1])
             auc = metrics.roc_auc_score(target, pred_proba[:,1])
             last_round_roc = pd.DataFrame({"fpr": fpr, "tpr": tpr})
-            last_round_roc.to_csv(f"{args.log_dir}/averaging-weights-learning/last_fpr_tpr_{args.tag}.csv", index=False)
+            last_round_roc.to_csv(f"{args.logdir}/fedavg/last_fpr_tpr.csv", index=False)
             self.plot_roc(fpr, tpr, title=f"{args.n_clients} clients (alpha={args.dirichlet_alpha})", label=f"{label}, AUC={auc:.2f}", args=args)
 
             micro_auc, macro_auc = auc, auc

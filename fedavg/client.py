@@ -190,7 +190,6 @@ class Client:
 
             accuracy = corrects / len(train_data.dataset)
             avg_loss = total_loss / len(train_data.dataset)
-            batch_loss = total_loss / len(train_data)
 
             self.logger.info(
                 f"Client{self.client_id}: epoch {epoch+0:02}, avg. loss: {avg_loss:.3f}, accuracy: {accuracy:.3f}"

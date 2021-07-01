@@ -2,14 +2,16 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import SGDClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn import linear_model, svm
+from sklearn.svm import SVC
 
 DEFAULT_ML_MODELS = {
     "NB":GaussianNB,
     "DT":DecisionTreeClassifier,
-    "LR":linear_model.LogisticRegression,
-    "SVC":svm.SVC,
+    "LR":LogisticRegression,
+    "SVC": SVC,
     "KNN": KNeighborsClassifier,
     "SGD":SGDClassifier,
     "LDA":LDA

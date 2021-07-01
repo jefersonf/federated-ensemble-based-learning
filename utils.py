@@ -175,7 +175,7 @@ def create_logdir(dir_path):
         os.makedirs(dir_path)
     return os.path.abspath(dir_path)
 
-def save_logs(dict_log, filepath):
+def save_reports(dict_log, filepath):
     with open(filepath, "w") as f:
         header = list(dict_log)
         f.write(",".join(header) + "\n")
