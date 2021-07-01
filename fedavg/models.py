@@ -3,11 +3,11 @@ import torch.nn as nn
 
 # default hidden layers configs
 DEFAULT_NN_CONFIGS = {
-    # COVID-19 configs
-    "A": [19],
     # Shelter dataset configs
-    "C": [18, 18],
-    "D": [36, 18],
+    "A": [18, 18],
+    "B": [36, 18],
+    # COVID-19 configs
+    "C": [19],
 }
 
 class NeuralNetworkContainer(nn.Module):
