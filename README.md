@@ -43,7 +43,7 @@ We recommend using a test environment such as `venv`, `virtualenv` or any other 
 To execute the whole experiment, some options need to be set.
 
 Option | Description | Default setting
-- | - | - |
+| - | - | - |
 `--rounds` | Communication rounds | 10
 `--epochs` | Client training epochs | 5
 `--clients` | Number of participating clients/nodes. For configurations with more than seven clients (ie `--clients > 7`) model types will repeat.  | 3
