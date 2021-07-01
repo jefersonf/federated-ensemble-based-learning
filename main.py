@@ -213,8 +213,9 @@ def averaging_weights_fl(train_dl, val_dl, test_dl, args, log):
         log_server["RoundId"].append(round_id)
         log_server["LearningType"].append("FedAvg")
         log_server["TestAccuracy"].append(server_acc)
-        log_server["Precision"].append(precision)
-        log_server["Recall"].append(recall)
+        for label_idx in range(output_size):
+            log_server[f"Class{label_idx}Precision"].append(precision[label_idx])
+            log_server[f"Class{label_idx}Recall"].append(recall[label_idx])
         log_server["TestMicroAUC"].append(micro_auc)
         log_server["TestMacroAUC"].append(macro_auc)
         
@@ -309,9 +310,9 @@ if __name__ == "__main__":
     for label in range(test_dl[0][1].unique().shape[0]):
         for dict_key in client_distribution:
             if label in client_distribution[dict_key]:
-                logs_dict_data[str(dict_key)].append(client_distribution[dict_key][label])
+                logs_dict_data[f"Class{dict_key}"].append(client_distribution[dict_key][label])
             else:
-                logs_dict_data[str(dict_key)].append(0)
+                logs_dict_data[f"Class{dict_key}"].append(0)
 
     save_reports(logs_dict_data, path.join(args.logdir, "data_distribution.csv"))
     # </ REPORT RELATED CODE > --------------------------------------------------------------------
