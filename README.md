@@ -49,14 +49,14 @@ Option | Description | Default setting
 `--clients` | Number of participating clients/nodes. For configurations with more than seven clients (ie `--clients > 7`) model types will repeat.  | 3
 `--data-path` | Path to training data |
 `--data-split` | Train/Validation/Test data split | 0.8, 0.1, and 0.1, respectively
-`--dirichlet-alpha` | Alpha value of Dirichlet distribution of training data | 100
+`--dirichlet-alpha` | Alpha value of Dirichlet distribution of training data | 10
 `--target-feature` | Target feature name to predict | 
 `--data_distrib_mode` | Data distribution mode over rounds | uniform
 `--fedavg` | Sets Federated Averaging Algorithm (FedAvg) | Ensemble-based Learning mode
 `--model_type` | Define which NN model will be used for federated task | A
-`--lr` | lr for optimizer function | 0.01
+`--lr` | learning rate for optimizer function | 0.01
 `--train_batch_size` | batch size for train NN model | 32
-`--evaluate_batch_size` | batch size for test/val NN model | 64
+`--test_batch_size` | batch size for test/val NN model | 64
 `--enable_grouping` | Enables the grouping of models of the same arch | False
 `--model_alocation` | Set to modify the beginning of the circular list | 0
 `--seed` | Random seed value | 1

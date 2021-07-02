@@ -240,8 +240,8 @@ def build_parser():
     parser.add_argument("--data-split", dest="data_split", nargs="+", type=float, 
         default=[.8, .1, .1],
         help="Train/Val/Test data split (default is 0.8, 0.1, and 0.1, respectively)")
-    parser.add_argument("--dirichlet-alpha", dest="dirichlet_alpha", type=float, default=100, 
-        help="Alpha value of Dirichlet distribution of training data (default is 100)")
+    parser.add_argument("--dirichlet-alpha", dest="dirichlet_alpha", type=float, default=10, 
+        help="Alpha value of Dirichlet distribution of training data (default is 10)")
     parser.add_argument("--target-feature", dest="target", default="",
         help="Target feature name to predict (default is OutcomeType for Shelter dataset)")
     parser.add_argument("--data_distrib_mode", default="uniform", 
@@ -253,7 +253,7 @@ def build_parser():
     parser.add_argument("--lr",type=float, help="lr for optimizer function", default=0.01)
     parser.add_argument("--train_batch_size", type=int, default=32,
         help="batch size for train NN model")
-    parser.add_argument("--evaluate_batch_size", type=int, default=64, 
+    parser.add_argument("--test_batch_size", type=int, default=64, 
         help="batch size for test/val NN model")
     parser.add_argument("--enable_grouping", action="store_true", default=False, 
         help='Enables the grouping of models of the same arch')

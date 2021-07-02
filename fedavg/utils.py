@@ -33,7 +33,7 @@ def define_nn_params(args, num_output):
         else F.cross_entropy,
         "optmizer": optim.Adam ,
         "train_batch_size": args.train_batch_size,
-        "evaluate_batch_size": args.evaluate_batch_size,
+        "test_batch_size": args.test_batch_size,
         "output_size": num_output,
     }
 

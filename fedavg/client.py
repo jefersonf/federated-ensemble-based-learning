@@ -146,10 +146,10 @@ class Client:
             torch.FloatTensor(features.values.astype(dtype='float64')),
             torch.FloatTensor(target.values),
         )
-
+        
         evaluate_data = DataLoader(
             dataset=TorchDataset(x_evaluate, y_evaluate),
-            batch_size=self.params["evaluate_batch_size"],
+            batch_size=self.params["test_batch_size"],
             shuffle=True
         )
 
