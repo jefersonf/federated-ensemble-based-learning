@@ -28,11 +28,11 @@ def ensemble_based_fl(train_dl, val_dl, test_dl, args, log):
         clients[i] = fedel.Client(model, client_id=i, archtype=archtype, verbose=args.verbose)
         log.info(f'Client{i} archtype: {archtype}')
     
-    client_datapoints = {i: np.array([], dtype='int64') for i in range(args.n_clients)}
     # Init server
     server = fedel.Server()
-    log.info('Server is initialized')
+    client_datapoints = {i: np.array([], dtype='int64') for i in range(args.n_clients)}
 
+    log.info('Server is initialized')
     for round_id in range(args.rounds):
         log.info(f'########## Communication round {round_id} ##########')
         for i in clients:
@@ -42,7 +42,7 @@ def ensemble_based_fl(train_dl, val_dl, test_dl, args, log):
             
             features, target = train_dl[i]
             round_datapoints = datapoints_loader(target, mode=args.data_distrib_mode, 
-                exclude=np.array([]), batch_size=(features.shape[0] // args.rounds))
+                exclude=client_datapoints[i], batch_size=(features.shape[0] // args.rounds))
             client_datapoints[i] = np.concatenate((client_datapoints[i], round_datapoints), axis=0)
 
             log.info(f'Client{i} trains locally (datapoints={len(client_datapoints[i])}, new={len(round_datapoints)})')
@@ -238,13 +238,13 @@ def build_parser():
     parser.add_argument("--data-path", dest="data_path", required=True,
     help="Path to training data")
     parser.add_argument("--data-split", dest="data_split", nargs="+", type=float, 
-        default=[.8, .1, .1],
-        help="Train/Val/Test data split (default is 0.8, 0.1, and 0.1, respectively)")
-    parser.add_argument("--dirichlet-alpha", dest="dirichlet_alpha", type=float, default=10, 
-        help="Alpha value of Dirichlet distribution of training data (default is 10)")
+        default=[.7, .1, .2],
+        help="Train/Val/Test data split (default is 0.7, 0.1, and 0.2, respectively)")
+    parser.add_argument("--dirichlet-alpha", dest="dirichlet_alpha", type=float, default=1, 
+        help="Alpha value of Dirichlet distribution of training data (default is 1)")
     parser.add_argument("--target-feature", dest="target", default="",
         help="Target feature name to predict (default is OutcomeType for Shelter dataset)")
-    parser.add_argument("--data_distrib_mode", default="uniform", 
+    parser.add_argument("--uniform", dest="data_distrib_mode", action="store_true", default=False, 
         help='Data distribution mode over rounds')
     parser.add_argument("--fedavg", action="store_true", default=False, 
         help="Sets Federated Averaging Algorithm - FedAvg (deafult is Ensemble-based Learning)")

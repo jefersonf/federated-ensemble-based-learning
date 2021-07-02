@@ -48,10 +48,10 @@ Option | Description | Default setting
 `--epochs` | Client training epochs | 5
 `--clients` | Number of participating clients/nodes. For configurations with more than seven clients (ie `--clients > 7`) model types will repeat.  | 3
 `--data-path` | Path to training data |
-`--data-split` | Train/Validation/Test data split | 0.8, 0.1, and 0.1, respectively
-`--dirichlet-alpha` | Alpha value of Dirichlet distribution of training data | 10
+`--data-split` | Train/Validation/Test data split | 0.7, 0.1, and 0.2, respectively
+`--dirichlet-alpha` | Alpha value of Dirichlet distribution of training data | 1
 `--target-feature` | Target feature name to predict | 
-`--data_distrib_mode` | Data distribution mode over rounds | uniform
+`--uniform` | Data distribution mode over rounds. If not set the distribution could be unbalanced according to input data distribution. (Warning! As we apply underfitting of data this can compromise the execution of training as it may not guarantee enough data to be distributed among the defined number of clients). | False
 `--fedavg` | Sets Federated Averaging Algorithm (FedAvg) | Ensemble-based Learning mode
 `--model_type` | Define which NN model will be used for federated task | A
 `--lr` | learning rate for optimizer function | 0.01

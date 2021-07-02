@@ -71,7 +71,7 @@ def ensure_representativeness(data, sample_idxs, sample_size, fill_minority=Fals
 
 def datapoints_loader(target, mode, exclude, batch_size):
     new_samples = np.array(list(set(target.index.tolist()) - set(exclude.tolist())))
-    datapoints = ensure_representativeness(target, new_samples, sample_size=batch_size, fill_minority=(mode.lower()=="uniform"))
+    datapoints = ensure_representativeness(target, new_samples, sample_size=batch_size, fill_minority=mode)
     return datapoints
 
 def count_labels_per_client(args, train_dl, logger):
