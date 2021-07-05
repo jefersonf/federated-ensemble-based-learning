@@ -1,0 +1,118 @@
+CSVHeader:
+  binary:
+    - ModelType
+    - Precision
+    - Recall
+    - F1Score
+    - AUC
+  multi:
+    - ModelType
+    - Precision
+    - Recall
+    - Accuracy
+DLModels:
+  A:
+    - 18
+    - 18
+  B:
+    - 36
+    - 18
+KFold: 5
+MLModels:
+  GaussianNB: null
+  DecisionTreeClassifier:
+    criterion:
+      - gini
+      - entropy
+    splitter:
+      - best
+      - random
+    max_depth:
+      - 5
+      - 10
+      - 15
+      - 30
+      - 50
+      - 150
+      - 340
+      - null
+  LogisticRegression:
+    C:
+      - 0.001
+      - 0.01
+      - 0.1
+      - 1
+      - 10
+      - 100
+    max_iter:
+      - 1000
+      - 2000
+      - 3000
+      - 4000
+  SVC:
+    C:
+      - 0.05
+      - 0.10
+      - 0.20
+      - 0.30
+      - 0.25
+      - 0.40
+      - 0.50
+      - 0.60
+      - 0.70
+      - 0.80
+      - 0.90
+      - 1.00
+    gamma:
+      - 0.10
+      - 0.20
+      - 0.30
+      - 0.40
+      - 0.50
+      - 0.60
+      - 0.70
+      - 0.80
+      - 0.90
+      - 1.00
+    kernel:
+      - rbf
+      - linear
+    probability:
+      - true
+  KNeighborsClassifier:
+    n_neighbors:
+      - 3
+      - 5
+      - 10
+      - 15
+      - 20
+      - 30
+      - 50
+    metric:
+      - euclidean
+      - manhattan
+  SGDClassifier:
+    alpha:
+      - 0.0001
+      - 0.001
+      - 0.01
+      - 0.1
+      - 1
+      - 10
+      - 100
+    max_iter:
+      - 1000
+      - 2000
+      - 3000
+      - 4000
+    loss:
+      - log
+  LDA:
+    solver: 
+      - svd
+      - lsqr
+    tol:
+      - 0.0001
+      - 0.001
+      - 0.01
+      - 0.1

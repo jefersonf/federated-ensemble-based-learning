@@ -1,7 +1,6 @@
 __pycache__/
 env/
 notebooks/
-baseline-models/
 
 *.py[cod]
 *.pyc

@@ -3,6 +3,7 @@ import os
 
 import pandas as pd
 import numpy as np
+import yaml
 
 from sklearn.model_selection import train_test_split
 
@@ -169,6 +170,11 @@ def data_partition_loader(training_data, n_clients, dirichlet_alpha=1e5):
 def softmax(w, T=0.15):
     S = sum([math.exp(x/T) for x in w])
     return [math.exp(x/T)/S for x in w]
+
+def load_config(cfg_filepath):
+    with open(cfg_filepath) as cfg_file:
+        cfg = yaml.full_load(cfg_file)
+    return cfg
 
 def create_logdir(dir_path):
     if not os.path.isdir(dir_path):

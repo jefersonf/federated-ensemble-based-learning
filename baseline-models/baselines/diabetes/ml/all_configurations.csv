@@ -1,0 +1,347 @@
+ModelType,Params,Precision,Recall,F1Score
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': 5},0.72187,0.72727,0.72342
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': 10},0.70845,0.71429,0.71025
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': 15},0.69360,0.69481,0.69417
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': 30},0.69134,0.69481,0.69280
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': 50},0.69691,0.70130,0.69862
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': 150},0.70845,0.71429,0.71025
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': 340},0.68831,0.68831,0.68831
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'best', 'max_depth': None},0.71593,0.72078,0.71757
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': 5},0.74258,0.74675,0.74384
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': 10},0.70261,0.70779,0.70443
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': 15},0.68092,0.67532,0.67767
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': 30},0.68831,0.68831,0.68831
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': 50},0.70451,0.70779,0.70588
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': 150},0.65528,0.64935,0.65189
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': 340},0.67922,0.66883,0.67267
+DecisionTreeClassifier,{'criterion': 'gini', 'splitter': 'random', 'max_depth': None},0.71938,0.71429,0.71635
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': 5},0.78613,0.77922,0.78148
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': 10},0.67804,0.67532,0.67657
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': 15},0.68588,0.68182,0.68359
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': 30},0.70664,0.70779,0.70719
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': 50},0.69874,0.69481,0.69651
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': 150},0.72229,0.71429,0.71721
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': 340},0.70382,0.70130,0.70244
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'best', 'max_depth': None},0.67804,0.67532,0.67657
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': 5},0.75150,0.75325,0.73715
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': 10},0.74502,0.74026,0.74214
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': 15},0.70953,0.70130,0.70436
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': 30},0.68233,0.69481,0.68146
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': 50},0.65373,0.64286,0.64700
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': 150},0.69093,0.68831,0.68950
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': 340},0.75325,0.75325,0.75325
+DecisionTreeClassifier,{'criterion': 'entropy', 'splitter': 'random', 'max_depth': None},0.77036,0.77273,0.77124
+LogisticRegression,{'C': 0.001, 'max_iter': 1000},0.77132,0.77273,0.76094
+LogisticRegression,{'C': 0.001, 'max_iter': 2000},0.77132,0.77273,0.76094
+LogisticRegression,{'C': 0.001, 'max_iter': 3000},0.77132,0.77273,0.76094
+LogisticRegression,{'C': 0.001, 'max_iter': 4000},0.77132,0.77273,0.76094
+LogisticRegression,{'C': 0.01, 'max_iter': 1000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 0.01, 'max_iter': 2000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 0.01, 'max_iter': 3000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 0.01, 'max_iter': 4000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 0.1, 'max_iter': 1000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 0.1, 'max_iter': 2000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 0.1, 'max_iter': 3000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 0.1, 'max_iter': 4000},0.76974,0.77273,0.76279
+LogisticRegression,{'C': 1, 'max_iter': 1000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 1, 'max_iter': 2000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 1, 'max_iter': 3000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 1, 'max_iter': 4000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 10, 'max_iter': 1000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 10, 'max_iter': 2000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 10, 'max_iter': 3000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 10, 'max_iter': 4000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 100, 'max_iter': 1000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 100, 'max_iter': 2000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 100, 'max_iter': 3000},0.77636,0.77922,0.77041
+LogisticRegression,{'C': 100, 'max_iter': 4000},0.77636,0.77922,0.77041
+SVC,{'C': 0.05, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.05, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.05, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.76196,0.76623,0.75691
+SVC,{'C': 0.1, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.1, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.1, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.76871,0.77273,0.76450
+SVC,{'C': 0.2, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.2, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.2, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.3, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.3, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.25, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.25, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.4, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.4, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.5, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.5, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.6, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.6, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.7, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.7, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.8, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.8, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 0.9, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 0.9, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.1, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.1, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.2, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.3, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.3, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.4, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.4, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.5, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.5, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.6, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.6, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.7, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.7, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.8, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.8, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 0.9, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 0.9, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+SVC,{'C': 1.0, 'gamma': 1.0, 'kernel': 'rbf', 'probability': True},0.41327,0.64286,0.50311
+SVC,{'C': 1.0, 'gamma': 1.0, 'kernel': 'linear', 'probability': True},0.77636,0.77922,0.77041
+KNeighborsClassifier,{'n_neighbors': 3, 'metric': 'euclidean'},0.73664,0.74026,0.73793
+KNeighborsClassifier,{'n_neighbors': 3, 'metric': 'manhattan'},0.69953,0.70779,0.70113
+KNeighborsClassifier,{'n_neighbors': 5, 'metric': 'euclidean'},0.72796,0.73377,0.72926
+KNeighborsClassifier,{'n_neighbors': 5, 'metric': 'manhattan'},0.74783,0.75325,0.74836
+KNeighborsClassifier,{'n_neighbors': 10, 'metric': 'euclidean'},0.75517,0.75974,0.74923
+KNeighborsClassifier,{'n_neighbors': 10, 'metric': 'manhattan'},0.76711,0.76623,0.75098
+KNeighborsClassifier,{'n_neighbors': 15, 'metric': 'euclidean'},0.78295,0.78571,0.77796
+KNeighborsClassifier,{'n_neighbors': 15, 'metric': 'manhattan'},0.81144,0.81169,0.80487
+KNeighborsClassifier,{'n_neighbors': 20, 'metric': 'euclidean'},0.77132,0.77273,0.76094
+KNeighborsClassifier,{'n_neighbors': 20, 'metric': 'manhattan'},0.81022,0.80519,0.79425
+KNeighborsClassifier,{'n_neighbors': 30, 'metric': 'euclidean'},0.78271,0.77922,0.76482
+KNeighborsClassifier,{'n_neighbors': 30, 'metric': 'manhattan'},0.77354,0.77273,0.75895
+KNeighborsClassifier,{'n_neighbors': 50, 'metric': 'euclidean'},0.75077,0.74675,0.72371
+KNeighborsClassifier,{'n_neighbors': 50, 'metric': 'manhattan'},0.78495,0.77273,0.75204
+SGDClassifier,{'alpha': 0.0001, 'max_iter': 1000, 'loss': 'log'},0.57548,0.63636,0.53996
+SGDClassifier,{'alpha': 0.0001, 'max_iter': 2000, 'loss': 'log'},0.66674,0.68182,0.66532
+SGDClassifier,{'alpha': 0.0001, 'max_iter': 3000, 'loss': 'log'},0.46782,0.61688,0.50101
+SGDClassifier,{'alpha': 0.0001, 'max_iter': 4000, 'loss': 'log'},0.58696,0.62338,0.58695
+SGDClassifier,{'alpha': 0.001, 'max_iter': 1000, 'loss': 'log'},0.57224,0.44805,0.42362
+SGDClassifier,{'alpha': 0.001, 'max_iter': 2000, 'loss': 'log'},0.55705,0.63636,0.52151
+SGDClassifier,{'alpha': 0.001, 'max_iter': 3000, 'loss': 'log'},0.61514,0.53247,0.53562
+SGDClassifier,{'alpha': 0.001, 'max_iter': 4000, 'loss': 'log'},0.61291,0.58442,0.59253
+SGDClassifier,{'alpha': 0.01, 'max_iter': 1000, 'loss': 'log'},0.64440,0.66234,0.59424
+SGDClassifier,{'alpha': 0.01, 'max_iter': 2000, 'loss': 'log'},0.53625,0.50649,0.51613
+SGDClassifier,{'alpha': 0.01, 'max_iter': 3000, 'loss': 'log'},0.64573,0.39610,0.28460
+SGDClassifier,{'alpha': 0.01, 'max_iter': 4000, 'loss': 'log'},0.41327,0.64286,0.50311
+SGDClassifier,{'alpha': 0.1, 'max_iter': 1000, 'loss': 'log'},0.69385,0.66234,0.66920
+SGDClassifier,{'alpha': 0.1, 'max_iter': 2000, 'loss': 'log'},0.56092,0.55195,0.55588
+SGDClassifier,{'alpha': 0.1, 'max_iter': 3000, 'loss': 'log'},0.54903,0.51948,0.52887
+SGDClassifier,{'alpha': 0.1, 'max_iter': 4000, 'loss': 'log'},0.33964,0.35065,0.19638
+SGDClassifier,{'alpha': 1, 'max_iter': 1000, 'loss': 'log'},0.67279,0.67532,0.67394
+SGDClassifier,{'alpha': 1, 'max_iter': 2000, 'loss': 'log'},0.46782,0.61688,0.50101
+SGDClassifier,{'alpha': 1, 'max_iter': 3000, 'loss': 'log'},0.58305,0.57792,0.58028
+SGDClassifier,{'alpha': 1, 'max_iter': 4000, 'loss': 'log'},0.66482,0.61688,0.62468
+SGDClassifier,{'alpha': 10, 'max_iter': 1000, 'loss': 'log'},0.46782,0.61688,0.50101
+SGDClassifier,{'alpha': 10, 'max_iter': 2000, 'loss': 'log'},0.46782,0.61688,0.50101
+SGDClassifier,{'alpha': 10, 'max_iter': 3000, 'loss': 'log'},0.59960,0.64286,0.56011
+SGDClassifier,{'alpha': 10, 'max_iter': 4000, 'loss': 'log'},0.60449,0.62987,0.60743
+SGDClassifier,{'alpha': 100, 'max_iter': 1000, 'loss': 'log'},0.54586,0.61039,0.54559
+SGDClassifier,{'alpha': 100, 'max_iter': 2000, 'loss': 'log'},0.57550,0.62987,0.55867
+SGDClassifier,{'alpha': 100, 'max_iter': 3000, 'loss': 'log'},0.58429,0.63636,0.55588
+SGDClassifier,{'alpha': 100, 'max_iter': 4000, 'loss': 'log'},0.55486,0.61688,0.54995
+LDA,{'solver': 'svd', 'tol': 0.0001},0.77636,0.77922,0.77041
+LDA,{'solver': 'svd', 'tol': 0.001},0.77636,0.77922,0.77041
+LDA,{'solver': 'svd', 'tol': 0.01},0.77636,0.77922,0.77041
+LDA,{'solver': 'svd', 'tol': 0.1},0.77636,0.77922,0.77041
+LDA,{'solver': 'lsqr', 'tol': 0.0001},0.77636,0.77922,0.77041
+LDA,{'solver': 'lsqr', 'tol': 0.001},0.77636,0.77922,0.77041
+LDA,{'solver': 'lsqr', 'tol': 0.01},0.77636,0.77922,0.77041
+LDA,{'solver': 'lsqr', 'tol': 0.1},0.77636,0.77922,0.77041

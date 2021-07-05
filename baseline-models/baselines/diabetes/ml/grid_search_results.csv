@@ -1,0 +1,7 @@
+ModelType,Precision,Recall,F1Score
+DecisionTreeClassifier,0.73085,0.73377,0.73202
+LogisticRegression,0.77636,0.77922,0.77041
+SVC,0.76871,0.77273,0.76450
+KNeighborsClassifier,0.78495,0.77273,0.75204
+SGDClassifier,0.58896,0.57143,0.57789
+LDA,0.77636,0.77922,0.77041
