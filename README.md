@@ -63,6 +63,9 @@ Option | Description | Default setting
 `-v, --verbose` | Sets verbose mode | False
 `--log-dir` | Directory path to save experiment reports | 
 
+## Some Results
+
+  ![experiment-results](lossfinal.png)
 
 ## Demo
 
