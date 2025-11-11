@@ -65,7 +65,7 @@ Option | Description | Default setting
 
 ## Some Results
 
-  ![experiment-results](lossfinal.png)
+  ![experiment-results](final-loss-experiments.png)
 
 ## Demo
 
